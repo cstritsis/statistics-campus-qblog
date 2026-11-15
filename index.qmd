@@ -1,0 +1,34 @@
+---
+title: "Blog: Statistics & Data Analysis"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+## Welcome to Statistics Campus
+
+**Statistics, Data Analysis & Research Methods**
+
+Statistics Campus provides scientific explanations, practical examples, and step-by-step tutorials for students, researchers, and professionals interested in statistical methods and data analysis.
+
+Our articles combine statistical theory with practical applications, primarily using R. Depending on the topic, they include mathematical formulas, statistical analyses, R code, visualizations, and guidance on interpreting results.
+
+### Available languages
+
+🇬🇧 **English** – Scientific articles and tutorials
+
+🇩🇪 **Deutsch** – Wissenschaftliche Beiträge und Anleitungen
+
+🇬🇷 **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί
+
+*English is currently the starting language. German and Greek versions will be added progressively.*
+
+------------------------------------------------------------------------
+
+## Scientific Articles

@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "posts/multiple-linear-regression/index.html",
+    "href": "posts/multiple-linear-regression/index.html",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "",
+    "text": "Multiple linear regression examines how a numerical outcome is associated with two or more predictors. By the end of this tutorial, you should be able to fit a regression model in R, interpret its coefficients, distinguish R-squared from adjusted R-squared, and inspect important model assumptions.\nPrerequisites: Basic descriptive statistics, scatterplots, correlation, and introductory hypothesis testing. This tutorial is intended for students in approximately their third semester."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#what-will-you-learn",
+    "href": "posts/multiple-linear-regression/index.html#what-will-you-learn",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "",
+    "text": "Multiple linear regression examines how a numerical outcome is associated with two or more predictors. By the end of this tutorial, you should be able to fit a regression model in R, interpret its coefficients, distinguish R-squared from adjusted R-squared, and inspect important model assumptions.\nPrerequisites: Basic descriptive statistics, scatterplots, correlation, and introductory hypothesis testing. This tutorial is intended for students in approximately their third semester."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#research-question-and-dataset",
+    "href": "posts/multiple-linear-regression/index.html#research-question-and-dataset",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "2 Research question and dataset",
+    "text": "2 Research question and dataset\nWe ask: How is fuel efficiency associated with a car’s weight and engine horsepower? We use mtcars, a small example dataset included with R. The outcome mpg is miles per US gallon (higher values mean greater fuel efficiency). wt records weight in 1,000 pounds, and hp records gross horsepower. The dataset contains 32 cars and is used here to learn the method, not to make current claims about modern vehicles.\n\ncars &lt;- mtcars[, c(\"mpg\", \"wt\", \"hp\")]\nhead(cars)\n\n                   mpg    wt  hp\nMazda RX4         21.0 2.620 110\nMazda RX4 Wag     21.0 2.875 110\nDatsun 710        22.8 2.320  93\nHornet 4 Drive    21.4 3.215 110\nHornet Sportabout 18.7 3.440 175\nValiant           18.1 3.460 105\n\nsummary(cars)\n\n      mpg              wt              hp       \n Min.   :10.40   Min.   :1.513   Min.   : 52.0  \n 1st Qu.:15.43   1st Qu.:2.581   1st Qu.: 96.5  \n Median :19.20   Median :3.325   Median :123.0  \n Mean   :20.09   Mean   :3.217   Mean   :146.7  \n 3rd Qu.:22.80   3rd Qu.:3.610   3rd Qu.:180.0  \n Max.   :33.90   Max.   :5.424   Max.   :335.0  \n\ncolSums(is.na(cars))\n\nmpg  wt  hp \n  0   0   0"
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#from-simple-to-multiple-regression",
+    "href": "posts/multiple-linear-regression/index.html#from-simple-to-multiple-regression",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "3 From simple to multiple regression",
+    "text": "3 From simple to multiple regression\nIn simple linear regression, one predictor explains variation in an outcome. Multiple regression adds further predictors. Our model is\n\\[\n\\mathrm{mpg}_i = \\beta_0 + \\beta_1\\mathrm{wt}_i + \\beta_2\\mathrm{hp}_i + \\varepsilon_i.\n\\]\nHere, \\(\\beta_0\\) is the intercept, \\(\\beta_1\\) and \\(\\beta_2\\) are population regression coefficients, and \\(\\varepsilon_i\\) is the error term. Each slope is interpreted while holding the other included predictor constant. This is an adjusted association, not automatically a causal effect."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#explore-the-relationships",
+    "href": "posts/multiple-linear-regression/index.html#explore-the-relationships",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "4 Explore the relationships",
+    "text": "4 Explore the relationships\n\npar(mfrow = c(1, 2))\nplot(cars$wt, cars$mpg, pch = 19, col = \"steelblue\",\n     xlab = \"Weight (1,000 lb)\", ylab = \"Fuel efficiency (mpg)\")\nplot(cars$hp, cars$mpg, pch = 19, col = \"steelblue\",\n     xlab = \"Horsepower (hp)\", ylab = \"Fuel efficiency (mpg)\")\npar(mfrow = c(1, 1))\n\n\n\n\n\n\n\nFigure 1: Observed relationships between fuel efficiency and the two predictors.\n\n\n\n\n\nA scatterplot is useful for detecting broad patterns and unusual observations. Separate scatterplots, however, do not show what happens after the other predictor is taken into account."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#fit-the-model-in-r",
+    "href": "posts/multiple-linear-regression/index.html#fit-the-model-in-r",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "5 Fit the model in R",
+    "text": "5 Fit the model in R\nR’s base stats package provides lm() for linear models, so no additional package is required.\n\nmodel &lt;- lm(mpg ~ wt + hp, data = cars)\nsummary(model)\n\n\nCall:\nlm(formula = mpg ~ wt + hp, data = cars)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-3.941 -1.600 -0.182  1.050  5.854 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 37.22727    1.59879  23.285  &lt; 2e-16 ***\nwt          -3.87783    0.63273  -6.129 1.12e-06 ***\nhp          -0.03177    0.00903  -3.519  0.00145 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.593 on 29 degrees of freedom\nMultiple R-squared:  0.8268,    Adjusted R-squared:  0.8148 \nF-statistic: 69.21 on 2 and 29 DF,  p-value: 9.109e-12\n\n\nThe formula mpg ~ wt + hp means predict mpg using weight and horsepower. The plus sign includes both main effects; it does not mean that weight and horsepower are added directly without estimated coefficients.\n\n5.1 Reading the output\n\ncoef_table &lt;- as.data.frame(summary(model)$coefficients)\nround(coef_table, 4)\n\n            Estimate Std. Error t value Pr(&gt;|t|)\n(Intercept)  37.2273     1.5988 23.2847   0.0000\nwt           -3.8778     0.6327 -6.1287   0.0000\nhp           -0.0318     0.0090 -3.5187   0.0015\n\n\nThe Estimate column provides the fitted intercept and slopes. Std. Error describes uncertainty in each estimate, while t value and Pr(&gt;|t|) refer to a two-sided test of the null hypothesis that the corresponding population coefficient equals zero, conditional on the other predictors in the model.\nFor this fitted example, the weight coefficient is -3.88 mpg per additional 1,000 lb, holding horsepower constant. The horsepower coefficient is -0.032 mpg per additional hp, holding weight constant. Thus, a one-unit change must always be interpreted in the units of the predictor.\nThe intercept is the predicted mpg when both weight and horsepower equal zero. Because this combination lies outside the meaningful data range, the intercept has little practical interpretation here."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#how-well-does-the-model-fit",
+    "href": "posts/multiple-linear-regression/index.html#how-well-does-the-model-fit",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "6 How well does the model fit?",
+    "text": "6 How well does the model fit?\n\ns &lt;- summary(model)\ndata.frame(\n  R_squared = s$r.squared,\n  Adjusted_R_squared = s$adj.r.squared,\n  Residual_standard_error = s$sigma,\n  F_statistic = unname(s$fstatistic[\"value\"])\n)\n\n  R_squared Adjusted_R_squared Residual_standard_error F_statistic\n1 0.8267855          0.8148396                2.593412    69.21121\n\n\nR-squared is the proportion of observed variation in mpg accounted for by this fitted model. Here it is 0.827. Adjusted R-squared also accounts for the number of predictors and is 0.815. Neither measure establishes causality or guarantees good predictions for new observations.\nThe overall F-test evaluates whether all non-intercept regression slopes are zero. This is different from the individual t-tests of the coefficients."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#check-model-assumptions",
+    "href": "posts/multiple-linear-regression/index.html#check-model-assumptions",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "7 Check model assumptions",
+    "text": "7 Check model assumptions\nBefore drawing strong conclusions, inspect the model rather than relying exclusively on p-values. Important considerations include: approximately linear conditional mean relationships, independent errors, roughly constant error variance, and approximately normal errors for conventional small-sample tests and intervals. Also examine influential observations and strong correlations among predictors.\n\npar(mfrow = c(1, 2))\nplot(model, which = 1)\nplot(model, which = 2)\npar(mfrow = c(1, 1))\n\n\n\n\n\n\n\nFigure 2: Regression diagnostic plots: residuals versus fitted values and normal Q–Q plot.\n\n\n\n\n\nIn the Residuals vs Fitted plot, look for curvature or a systematic change in spread. In the Normal Q–Q plot, large departures from the reference line may indicate departures from normality. The plots help assess assumptions but do not provide absolute pass/fail decisions. Independence depends especially on how the observations were collected.\nWeight and horsepower can be correlated, which may make individual slopes harder to estimate precisely. A simple initial check is:\n\ncor(cars$wt, cars$hp)\n\n[1] 0.6587479\n\n\nCorrelation among predictors is not automatically a violation of regression assumptions, but very strong multicollinearity can inflate standard errors."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#make-a-prediction",
+    "href": "posts/multiple-linear-regression/index.html#make-a-prediction",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "8 Make a prediction",
+    "text": "8 Make a prediction\n\nnew_car &lt;- data.frame(wt = 3.0, hp = 150)\npredict(model, newdata = new_car, interval = \"prediction\", level = 0.95)\n\n       fit      lwr      upr\n1 20.82784 15.43169 26.22398\n\n\nA prediction interval concerns a future individual outcome and is generally wider than a confidence interval for the mean response. Both depend on the model assumptions and should be used cautiously outside the range of the observed data."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#example-results-paragraph",
+    "href": "posts/multiple-linear-regression/index.html#example-results-paragraph",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "9 Example results paragraph",
+    "text": "9 Example results paragraph\nA multiple linear regression was fitted to examine the association of vehicle weight and horsepower with fuel efficiency (mpg; n = 32). The model accounted for approximately 82.7% of the observed variation in fuel efficiency (R² = 0.827, adjusted R² = 0.815). With horsepower held constant, weight had an estimated coefficient of b = -3.88 mpg per 1,000 lb. With weight held constant, horsepower had an estimated coefficient of b = -0.032 mpg per hp. These associations should not be interpreted as causal effects."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#try-it-yourself",
+    "href": "posts/multiple-linear-regression/index.html#try-it-yourself",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "10 Try it yourself",
+    "text": "10 Try it yourself\n\nFit lm(mpg ~ wt, data = cars). How does its R-squared compare with the multiple regression model?\nFit lm(mpg ~ hp, data = cars). Does the horsepower coefficient change when weight is added? Why might it change?\nRun confint(model) and identify the 95% confidence interval for the weight coefficient.\nExplain why the prediction interval in Section 7 is not the same as a confidence interval for the expected mpg.\nIdentify one limitation of using mtcars to generalise to modern cars."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#key-takeaways",
+    "href": "posts/multiple-linear-regression/index.html#key-takeaways",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "11 Key takeaways",
+    "text": "11 Key takeaways\nMultiple regression estimates the association between an outcome and each predictor conditional on the other variables included in the model. A useful analysis requires more than fitting lm(): meaningful units, inspection of assumptions, cautious interpretation of uncertainty, and a clear distinction between association and causation are essential."
+  },
+  {
+    "objectID": "posts/multiple-linear-regression/index.html#further-reading",
+    "href": "posts/multiple-linear-regression/index.html#further-reading",
+    "title": "Multiple Linear Regression with R: A Step-by-Step Guide",
+    "section": "12 Further reading",
+    "text": "12 Further reading\n\nR Core Team. R documentation: lm() and plot.lm().\nhttps://search.r-project.org/R/refmans/stats/html/lm.html and\nhttps://search.r-project.org/R/refmans/stats/html/plot.lm.html\nQuarto. Using R. https://quarto.org/docs/computations/r.html"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog: Statistics & Data Analysis",
+    "section": "",
+    "text": "Statistics, Data Analysis & Research Methods\nStatistics Campus provides scientific explanations, practical examples, and step-by-step tutorials for students, researchers, and professionals interested in statistical methods and data analysis.\nOur articles combine statistical theory with practical applications, primarily using R. Depending on the topic, they include mathematical formulas, statistical analyses, R code, visualizations, and guidance on interpreting results.\n\n\n🇬🇧 English – Scientific articles and tutorials\n🇩🇪 Deutsch – Wissenschaftliche Beiträge und Anleitungen\n🇬🇷 Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί\nEnglish is currently the starting language. German and Greek versions will be added progressively."
+  },
+  {
+    "objectID": "index.html#welcome-to-statistics-campus",
+    "href": "index.html#welcome-to-statistics-campus",
+    "title": "Blog: Statistics & Data Analysis",
+    "section": "",
+    "text": "Statistics, Data Analysis & Research Methods\nStatistics Campus provides scientific explanations, practical examples, and step-by-step tutorials for students, researchers, and professionals interested in statistical methods and data analysis.\nOur articles combine statistical theory with practical applications, primarily using R. Depending on the topic, they include mathematical formulas, statistical analyses, R code, visualizations, and guidance on interpreting results.\n\n\n🇬🇧 English – Scientific articles and tutorials\n🇩🇪 Deutsch – Wissenschaftliche Beiträge und Anleitungen\n🇬🇷 Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί\nEnglish is currently the starting language. German and Greek versions will be added progressively."
+  },
+  {
+    "objectID": "index.html#scientific-articles",
+    "href": "index.html#scientific-articles",
+    "title": "Blog: Statistics & Data Analysis",
+    "section": "Scientific Articles",
+    "text": "Scientific Articles"
+  }
+]
