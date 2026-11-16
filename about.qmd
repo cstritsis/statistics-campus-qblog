@@ -19,10 +19,6 @@ about:
       href: https://github.com/cstritsis/statistics-campus-qblog
 ---
 
-About Statistics Campus
-
-**Statistical Methods, Data Analysis & Research**
-
 Statistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.
 
 The blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis.
