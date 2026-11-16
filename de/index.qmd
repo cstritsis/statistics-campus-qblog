@@ -14,9 +14,13 @@ Die Beiträge verbinden statistische Grundlagen mit praktischen Anwendungen, ins
 
 ## Verfügbare Sprachen
 
-- **English** – Scientific articles and tutorials
-- **Deutsch** – Wissenschaftliche Beiträge und Anleitungen
-- **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί
+[![English](../images/flag-gb.svg){width="24px"} **English** – Scientific articles and tutorials](/)
+
+[![Deutsch](../images/flag-de.svg){width="24px"} **Deutsch** – Wissenschaftliche Beiträge und Anleitungen](/de/)
+
+[![Ελληνικά](../images/flag-gr.svg){width="24px"} **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί](/el/)
+
+------------------------------------------------------------------------
 
 ## Wissenschaftliche Beiträge
 

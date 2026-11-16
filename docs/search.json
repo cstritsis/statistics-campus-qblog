@@ -109,7 +109,7 @@
     "href": "el/index.html#διαθέσιμες-γλώσσες",
     "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
     "section": "Διαθέσιμες γλώσσες",
-    "text": "Διαθέσιμες γλώσσες\n\nEnglish – Scientific articles and tutorials\nDeutsch – Wissenschaftliche Beiträge und Anleitungen\nΕλληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+    "text": "Διαθέσιμες γλώσσες\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
   },
   {
     "objectID": "el/index.html#επιστημονικά-άρθρα",
@@ -121,9 +121,37 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Statistics Campus",
     "section": "",
-    "text": "About this blog"
+    "text": "About Statistics Campus\nStatistical Methods, Data Analysis & Research\nStatistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.\nThe blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis."
+  },
+  {
+    "objectID": "about.html#what-you-will-find-here",
+    "href": "about.html#what-you-will-find-here",
+    "title": "About Statistics Campus",
+    "section": "What You Will Find Here",
+    "text": "What You Will Find Here\nOur articles cover a range of topics, including:\n\nDescriptive and inferential statistics\nRegression analysis and statistical modeling\nAnalysis of variance (ANOVA)\nMultivariate statistical methods\nStatistical visualization and interpretation\nReproducible data analysis with R\n\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results."
+  },
+  {
+    "objectID": "about.html#our-approach",
+    "href": "about.html#our-approach",
+    "title": "About Statistics Campus",
+    "section": "Our Approach",
+    "text": "Our Approach\nStatistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials."
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About Statistics Campus",
+    "section": "Languages",
+    "text": "Languages\nStatistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic."
+  },
+  {
+    "objectID": "about.html#statistics-campus-main-website",
+    "href": "about.html#statistics-campus-main-website",
+    "title": "About Statistics Campus",
+    "section": "Statistics Campus – Main Website",
+    "text": "Statistics Campus – Main Website\nThis Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
   },
   {
     "objectID": "de/index.html",
@@ -144,7 +172,7 @@
     "href": "de/index.html#verfügbare-sprachen",
     "title": "Blog: Statistik & Datenanalyse",
     "section": "Verfügbare Sprachen",
-    "text": "Verfügbare Sprachen\n\nEnglish – Scientific articles and tutorials\nDeutsch – Wissenschaftliche Beiträge und Anleitungen\nΕλληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+    "text": "Verfügbare Sprachen\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
   },
   {
     "objectID": "de/index.html#wissenschaftliche-beiträge",

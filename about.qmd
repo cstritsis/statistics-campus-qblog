@@ -1,19 +1,62 @@
 ---
-title: "About"
-image: profile.jpg
+title: "About Statistics Campus"
+subtitle: "Statistical Methods, Data Analysis & Research"
+lang: en
+image: logo_aktuell_1.png
 about:
   template: jolla
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://x.com/statcampus
+
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/christos-stritsis-3804494b/
+      
     - icon: github
       text: Github
-      href: https://github.com
-
+      href: https://github.com/cstritsis/statistics-campus-qblog
 ---
 
-About this blog
+About Statistics Campus
+
+**Statistical Methods, Data Analysis & Research**
+
+Statistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.
+
+The blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis.
+
+## What You Will Find Here
+
+Our articles cover a range of topics, including:
+
+- Descriptive and inferential statistics
+
+- Regression analysis and statistical modeling
+
+- Analysis of variance (ANOVA)
+
+- Multivariate statistical methods
+
+- Statistical visualization and interpretation
+
+- Reproducible data analysis with R
+
+Each article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.
+
+## Our Approach
+
+Statistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.
+
+R is the primary software environment used throughout the tutorials.
+
+## Languages
+
+Statistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic.
+
+## Statistics Campus – Main Website
+
+This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.
+
+**Main website:** <https://statistics-campus.com/>

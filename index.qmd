@@ -27,5 +27,6 @@ Our articles combine statistical theory with practical applications, primarily u
 
 [![Ελληνικά](images/flag-gr.svg){width="24px"} **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί](/el/)
 
-------------------------------------------------------------------
+------------------------------------------------------------------------
+
 ## Scientific Articles
