@@ -1,16 +1,19 @@
 ---
 title: "Blog: Statistik & Datenanalyse"
 lang: de
-page-layout: full
----
 
-## Willkommen bei Statistics Campus
+page-layout: full
+title-block-banner: true
+---
+## Willkommen im Statistics-Campus-Blog
 
 ### Statistik, Datenanalyse & Forschungsmethoden
 
-Statistics Campus bietet wissenschaftlich fundierte Erklärungen, praxisorientierte Beispiele und schrittweise Anleitungen für Studierende, Forschende und Fachkräfte, die sich mit statistischen Methoden und der Analyse von Daten beschäftigen.
+Der Statistics-Campus-Blog veröffentlicht wissenschaftlich fundierte Fachbeiträge, praxisorientierte Beispiele und reproduzierbare Anleitungen zu statistischen Methoden und zur Datenanalyse.
 
-Die Beiträge verbinden statistische Grundlagen mit praktischen Anwendungen, insbesondere unter Verwendung von R. Je nach Thema enthalten sie mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen und Hinweise zur Interpretation der Ergebnisse.
+Die Beiträge richten sich an Studierende, Forschende und Fachkräfte, die ihre statistischen Kenntnisse vertiefen und ihre Fähigkeiten zur eigenständigen Datenanalyse weiterentwickeln möchten.
+
+Im Mittelpunkt steht die Verbindung statistischer Grundlagen mit ihrer praktischen Anwendung, überwiegend unter Verwendung von R. Je nach Thema umfassen die Beiträge mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen, Modelldiagnostik und Hinweise zur Interpretation der Ergebnisse.
 
 ## Verfügbare Sprachen
 
@@ -24,4 +27,3 @@ Die Beiträge verbinden statistische Grundlagen mit praktischen Anwendungen, ins
 
 ## Wissenschaftliche Beiträge
 
-Deutschsprachige Fachartikel und praktische R-Anleitungen werden hier schrittweise ergänzt.

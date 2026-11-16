@@ -3,7 +3,7 @@ title: "Blog: Statistics & Data Analysis"
 lang: en
 
 listing:
-  contents: "../posts/*/index.qmd"
+  contents: "../posts_en/*/index.qmd"
   sort: "date desc"
   type: default
   categories: true
