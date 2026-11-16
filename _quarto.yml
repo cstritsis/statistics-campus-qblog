@@ -20,10 +20,10 @@ website:
      - href: about.qmd
 
      - icon: github
-       href: https://github.com/
+       href: https://github.com/cstritsis/statistics-campus-qblog
 
      - icon: twitter
-       href: https://twitter.com
+       href: https://x.com/statcampus
 
 format:
   html:

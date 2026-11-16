@@ -123,35 +123,35 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Statistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.\nThe blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis."
+    "text": "Statistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.\nThe blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis.\n\n\nOur articles cover a range of topics, including:\n\nDescriptive and inferential statistics\nRegression analysis and statistical modeling\nAnalysis of variance (ANOVA)\nMultivariate statistical methods\nStatistical visualization and interpretation\nReproducible data analysis with R\n\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.\n\n\n\nStatistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials.\n\n\n\nStatistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic.\n\n\n\nThis Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
   },
   {
     "objectID": "about.html#what-you-will-find-here",
     "href": "about.html#what-you-will-find-here",
     "title": "About",
-    "section": "What You Will Find Here",
-    "text": "What You Will Find Here\nOur articles cover a range of topics, including:\n\nDescriptive and inferential statistics\nRegression analysis and statistical modeling\nAnalysis of variance (ANOVA)\nMultivariate statistical methods\nStatistical visualization and interpretation\nReproducible data analysis with R\n\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results."
+    "section": "",
+    "text": "Our articles cover a range of topics, including:\n\nDescriptive and inferential statistics\nRegression analysis and statistical modeling\nAnalysis of variance (ANOVA)\nMultivariate statistical methods\nStatistical visualization and interpretation\nReproducible data analysis with R\n\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results."
   },
   {
     "objectID": "about.html#our-approach",
     "href": "about.html#our-approach",
     "title": "About",
-    "section": "Our Approach",
-    "text": "Our Approach\nStatistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials."
+    "section": "",
+    "text": "Statistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials."
   },
   {
     "objectID": "about.html#languages",
     "href": "about.html#languages",
     "title": "About",
-    "section": "Languages",
-    "text": "Languages\nStatistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic."
+    "section": "",
+    "text": "Statistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic."
   },
   {
     "objectID": "about.html#statistics-campus-main-website",
     "href": "about.html#statistics-campus-main-website",
     "title": "About",
-    "section": "Statistics Campus – Main Website",
-    "text": "Statistics Campus – Main Website\nThis Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
+    "section": "",
+    "text": "This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
   },
   {
     "objectID": "de/index.html",
