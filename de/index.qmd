@@ -1,0 +1,23 @@
+---
+title: "Blog: Statistik & Datenanalyse"
+lang: de
+page-layout: full
+---
+
+## Willkommen bei Statistics Campus
+
+### Statistik, Datenanalyse & Forschungsmethoden
+
+Statistics Campus bietet wissenschaftlich fundierte Erklärungen, praxisorientierte Beispiele und schrittweise Anleitungen für Studierende, Forschende und Fachkräfte, die sich mit statistischen Methoden und der Analyse von Daten beschäftigen.
+
+Die Beiträge verbinden statistische Grundlagen mit praktischen Anwendungen, insbesondere unter Verwendung von R. Je nach Thema enthalten sie mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen und Hinweise zur Interpretation der Ergebnisse.
+
+## Verfügbare Sprachen
+
+- **English** – Scientific articles and tutorials
+- **Deutsch** – Wissenschaftliche Beiträge und Anleitungen
+- **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί
+
+## Wissenschaftliche Beiträge
+
+Deutschsprachige Fachartikel und praktische R-Anleitungen werden hier schrittweise ergänzt.

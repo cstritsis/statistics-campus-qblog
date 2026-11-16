@@ -91,11 +91,67 @@
     "text": "12 Further reading\n\nR Core Team. R documentation: lm() and plot.lm().\nhttps://search.r-project.org/R/refmans/stats/html/lm.html and\nhttps://search.r-project.org/R/refmans/stats/html/plot.lm.html\nQuarto. Using R. https://quarto.org/docs/computations/r.html"
   },
   {
+    "objectID": "el/index.html",
+    "href": "el/index.html",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "",
+    "text": "Το Statistics Campus προσφέρει επιστημονικά τεκμηριωμένες εξηγήσεις, πρακτικά παραδείγματα και αναλυτικούς οδηγούς για φοιτητές, ερευνητές και επαγγελματίες που ενδιαφέρονται για τη στατιστική και την ανάλυση δεδομένων.\nΤα άρθρα συνδυάζουν τη στατιστική θεωρία με πρακτικές εφαρμογές, κυρίως μέσω της γλώσσας προγραμματισμού R. Ανάλογα με το θέμα, περιλαμβάνουν μαθηματικούς τύπους, στατιστικές αναλύσεις, κώδικα R, γραφήματα και οδηγίες για την ερμηνεία των αποτελεσμάτων."
+  },
+  {
+    "objectID": "el/index.html#καλώς-ήρθατε-στο-statistics-campus",
+    "href": "el/index.html#καλώς-ήρθατε-στο-statistics-campus",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "",
+    "text": "Το Statistics Campus προσφέρει επιστημονικά τεκμηριωμένες εξηγήσεις, πρακτικά παραδείγματα και αναλυτικούς οδηγούς για φοιτητές, ερευνητές και επαγγελματίες που ενδιαφέρονται για τη στατιστική και την ανάλυση δεδομένων.\nΤα άρθρα συνδυάζουν τη στατιστική θεωρία με πρακτικές εφαρμογές, κυρίως μέσω της γλώσσας προγραμματισμού R. Ανάλογα με το θέμα, περιλαμβάνουν μαθηματικούς τύπους, στατιστικές αναλύσεις, κώδικα R, γραφήματα και οδηγίες για την ερμηνεία των αποτελεσμάτων."
+  },
+  {
+    "objectID": "el/index.html#διαθέσιμες-γλώσσες",
+    "href": "el/index.html#διαθέσιμες-γλώσσες",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "Διαθέσιμες γλώσσες",
+    "text": "Διαθέσιμες γλώσσες\n\nEnglish – Scientific articles and tutorials\nDeutsch – Wissenschaftliche Beiträge und Anleitungen\nΕλληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+  },
+  {
+    "objectID": "el/index.html#επιστημονικά-άρθρα",
+    "href": "el/index.html#επιστημονικά-άρθρα",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "Επιστημονικά άρθρα",
+    "text": "Επιστημονικά άρθρα\nΕδώ θα προστίθενται σταδιακά επιστημονικά άρθρα και πρακτικοί οδηγοί στα ελληνικά, με έμφαση στη στατιστική ανάλυση δεδομένων και στις εφαρμογές της R."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "de/index.html",
+    "href": "de/index.html",
+    "title": "Blog: Statistik & Datenanalyse",
+    "section": "",
+    "text": "Statistics Campus bietet wissenschaftlich fundierte Erklärungen, praxisorientierte Beispiele und schrittweise Anleitungen für Studierende, Forschende und Fachkräfte, die sich mit statistischen Methoden und der Analyse von Daten beschäftigen.\nDie Beiträge verbinden statistische Grundlagen mit praktischen Anwendungen, insbesondere unter Verwendung von R. Je nach Thema enthalten sie mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen und Hinweise zur Interpretation der Ergebnisse."
+  },
+  {
+    "objectID": "de/index.html#willkommen-bei-statistics-campus",
+    "href": "de/index.html#willkommen-bei-statistics-campus",
+    "title": "Blog: Statistik & Datenanalyse",
+    "section": "",
+    "text": "Statistics Campus bietet wissenschaftlich fundierte Erklärungen, praxisorientierte Beispiele und schrittweise Anleitungen für Studierende, Forschende und Fachkräfte, die sich mit statistischen Methoden und der Analyse von Daten beschäftigen.\nDie Beiträge verbinden statistische Grundlagen mit praktischen Anwendungen, insbesondere unter Verwendung von R. Je nach Thema enthalten sie mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen und Hinweise zur Interpretation der Ergebnisse."
+  },
+  {
+    "objectID": "de/index.html#verfügbare-sprachen",
+    "href": "de/index.html#verfügbare-sprachen",
+    "title": "Blog: Statistik & Datenanalyse",
+    "section": "Verfügbare Sprachen",
+    "text": "Verfügbare Sprachen\n\nEnglish – Scientific articles and tutorials\nDeutsch – Wissenschaftliche Beiträge und Anleitungen\nΕλληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+  },
+  {
+    "objectID": "de/index.html#wissenschaftliche-beiträge",
+    "href": "de/index.html#wissenschaftliche-beiträge",
+    "title": "Blog: Statistik & Datenanalyse",
+    "section": "Wissenschaftliche Beiträge",
+    "text": "Wissenschaftliche Beiträge\nDeutschsprachige Fachartikel und praktische R-Anleitungen werden hier schrittweise ergänzt."
   },
   {
     "objectID": "index.html",

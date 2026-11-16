@@ -1,16 +1,27 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - CNAME
 
 website:
   title: "Statistics Campus"
   navbar:
     right:
      - text: '<img src="/images/flag-gb.svg" alt="English" width="24">'
-       href: index.qmd
+       href: https://blog.statistics-campus.com/
+
+     - text: '<img src="/images/flag-de.svg" alt="Deutsch" width="24">'
+       href: https://blog.statistics-campus.com/de/
+
+     - text: '<img src="/images/flag-gr.svg" alt="Ελληνικά" width="24">'
+       href: https://blog.statistics-campus.com/el/
+
      - href: about.qmd
+
      - icon: github
        href: https://github.com/
+
      - icon: twitter
        href: https://twitter.com
 

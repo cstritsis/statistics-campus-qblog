@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 36" role="img" aria-label="Greek flag">
+  <rect width="54" height="36" fill="#FFFFFF"/>
+  <path d="M0 0H54V4H0ZM0 8H54V12H0ZM0 16H54V20H0ZM0 24H54V28H0ZM0 32H54V36H0Z" fill="#0D5EAF"/>
+  <rect width="20" height="20" fill="#0D5EAF"/>
+  <path d="M8 0H12V20H8ZM0 8H20V12H0Z" fill="#FFFFFF"/>
+</svg>
