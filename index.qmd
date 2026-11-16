@@ -21,14 +21,11 @@ Our articles combine statistical theory with practical applications, primarily u
 
 ### Available languages
 
-🇬🇧 **English** – Scientific articles and tutorials
+[![English](images/flag-gb.svg){width="24px"} **English** – Scientific articles and tutorials](/)
 
-🇩🇪 **Deutsch** – Wissenschaftliche Beiträge und Anleitungen
+[![Deutsch](images/flag-de.svg){width="24px"} **Deutsch** – Wissenschaftliche Beiträge und Anleitungen](/de/)
 
-🇬🇷 **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί
+[![Ελληνικά](images/flag-gr.svg){width="24px"} **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί](/el/)
 
-*English is currently the starting language. German and Greek versions will be added progressively.*
-
-------------------------------------------------------------------------
-
+------------------------------------------------------------------
 ## Scientific Articles
