@@ -20,28 +20,22 @@ about:
       text: Github
       href: https://github.com/cstritsis/statistics-campus-qblog
 ---
+# Welcome to the Statistics Campus Blog
 
-# Welcome to the Blog
+The Statistics Campus Blog focuses on statistical methods, data analysis, and their practical applications in academic research and professional contexts.
 
-Statistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.
-
-The blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis.
+It offers scientifically grounded articles, practical examples, and reproducible tutorials, primarily using R. The content is designed for students, researchers, and professionals who wish to deepen their understanding of statistical methods, develop their analytical skills, and critically interpret statistical results.
 
 ## What You Will Find Here
 
 Our articles cover a range of topics, including:
 
-- Descriptive and inferential statistics
-
-- Regression analysis and statistical modeling
-
-- Analysis of variance (ANOVA)
-
-- Multivariate statistical methods
-
-- Statistical visualization and interpretation
-
-- Reproducible data analysis with R
+Descriptive and inferential statistics
+Regression analysis and statistical modeling
+Analysis of variance (ANOVA)
+Multivariate statistical methods
+Statistical visualization and interpretation
+Reproducible data analysis with R
 
 Each article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.
 

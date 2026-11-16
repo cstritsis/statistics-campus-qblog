@@ -1,0 +1,37 @@
+---
+title: "Blog: Statistics & Data Analysis"
+lang: en
+
+listing:
+  contents: "../posts/*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+
+page-layout: full
+title-block-banner: true
+---
+
+## Welcome to the Statistics Campus Blog
+
+### Statistics, Data Analysis & Research Methods
+
+The Statistics Campus Blog publishes scientifically grounded articles, practical examples, and reproducible tutorials on statistical methods and data analysis.
+
+The articles are intended for students, researchers, and professionals who wish to deepen their statistical knowledge and develop practical analytical skills.
+
+Statistical theory is combined with applications, primarily using R. Depending on the topic, the articles include mathematical formulas, statistical analyses, R code, visualizations, model diagnostics, and guidance on interpreting results.
+
+### Available languages
+
+[![English](../images/flag-gb.svg){width="24px"} **English** – Scientific articles and tutorials](/en/)
+
+[![Deutsch](../images/flag-de.svg){width="24px"} **Deutsch** – Wissenschaftliche Beiträge und Anleitungen](/de/)
+
+[![Ελληνικά](../images/flag-gr.svg){width="24px"} **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί](/el/)
+
+------------------------------------------------------------------------
+
+## Scientific Articles

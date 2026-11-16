@@ -88,20 +88,20 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://blog.statistics-campus.com/"> 
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./en/index.html"> 
 <span class="menu-text"><img src="./images/flag-gb.svg" alt="English" width="24"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://blog.statistics-campus.com/de/"> 
+    <a class="nav-link" href="./de/index.html"> 
 <span class="menu-text"><img src="./images/flag-de.svg" alt="Deutsch" width="24"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://blog.statistics-campus.com/el/"> 
+    <a class="nav-link" href="./el/index.html"> 
 <span class="menu-text"><img src="./images/flag-gr.svg" alt="Ελληνικά" width="24"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
-<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/cstritsis/statistics-campus-qblog"> <i class="bi bi-github" role="img">
@@ -137,21 +137,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-<section id="welcome-to-the-blog" class="level1">
-<h1>Welcome to the Blog</h1>
-<p>Statistics Campus is an online platform dedicated to statistical methods, data analysis, and their practical application in academic research and professional projects.</p>
-<p>The blog provides scientifically grounded articles, practical examples, and reproducible tutorials designed for students, researchers, and professionals seeking to develop a deeper understanding of statistical analysis.</p>
+<section id="welcome-to-the-statistics-campus-blog" class="level1">
+<h1>Welcome to the Statistics Campus Blog</h1>
+<p>The Statistics Campus Blog focuses on statistical methods, data analysis, and their practical applications in academic research and professional contexts.</p>
+<p>It offers scientifically grounded articles, practical examples, and reproducible tutorials, primarily using R. The content is designed for students, researchers, and professionals who wish to deepen their understanding of statistical methods, develop their analytical skills, and critically interpret statistical results.</p>
 <section id="what-you-will-find-here" class="level2">
 <h2 data-anchor-id="what-you-will-find-here">What You Will Find Here</h2>
 <p>Our articles cover a range of topics, including:</p>
-<ul>
-<li><p>Descriptive and inferential statistics</p></li>
-<li><p>Regression analysis and statistical modeling</p></li>
-<li><p>Analysis of variance (ANOVA)</p></li>
-<li><p>Multivariate statistical methods</p></li>
-<li><p>Statistical visualization and interpretation</p></li>
-<li><p>Reproducible data analysis with R</p></li>
-</ul>
+<p>Descriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R</p>
 <p>Each article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.</p>
 </section>
 <section id="our-approach" class="level2">
@@ -272,7 +265,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/blog\.statistics-campus\.com\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

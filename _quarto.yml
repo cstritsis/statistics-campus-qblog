@@ -6,24 +6,28 @@ project:
 
 website:
   title: "Statistics Campus"
+  site-url: https://blog.statistics-campus.com/
+
   navbar:
     right:
-     - text: '<img src="/images/flag-gb.svg" alt="English" width="24">'
-       href: https://blog.statistics-campus.com/
+      - text: "About"
+        href: index.qmd
 
-     - text: '<img src="/images/flag-de.svg" alt="Deutsch" width="24">'
-       href: https://blog.statistics-campus.com/de/
+      - text: '<img src="/images/flag-gb.svg" alt="English" width="24">'
+        href: en/index.qmd
 
-     - text: '<img src="/images/flag-gr.svg" alt="Ελληνικά" width="24">'
-       href: https://blog.statistics-campus.com/el/
+      - text: '<img src="/images/flag-de.svg" alt="Deutsch" width="24">'
+        href: de/index.qmd
 
-     - href: about.qmd
+      - text: '<img src="/images/flag-gr.svg" alt="Ελληνικά" width="24">'
+        href: el/index.qmd
 
-     - icon: github
-       href: https://github.com/cstritsis/statistics-campus-qblog
+      - icon: github
+        href: https://github.com/cstritsis/statistics-campus-qblog
 
-     - icon: twitter
-       href: https://x.com/statcampus
+      - icon: twitter
+        href: https://x.com/statcampus
+
 
 format:
   html:

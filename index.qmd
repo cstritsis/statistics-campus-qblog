@@ -1,32 +1,52 @@
 ---
-title: "Blog: Statistics & Data Analysis"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "About"
+subtitle: "Statistical Methods, Data Analysis & Research"
+lang: en
+image: logo_aktuell_1.png
+about:
+  template: jolla
+  image-shape: rectangle
+  image-width: 320px
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/statcampus
+
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/christos-stritsis-3804494b/
+      
+    - icon: github
+      text: Github
+      href: https://github.com/cstritsis/statistics-campus-qblog
 ---
 
-## Welcome to Statistics Campus
+# Welcome to the Statistics Campus Blog
 
-**Statistics, Data Analysis & Research Methods**
+The Statistics Campus Blog focuses on statistical methods, data analysis, and their practical applications in academic research and professional contexts.
 
-Statistics Campus provides scientific explanations, practical examples, and step-by-step tutorials for students, researchers, and professionals interested in statistical methods and data analysis.
+It offers scientifically grounded articles, practical examples, and reproducible tutorials, primarily using R. The content is designed for students, researchers, and professionals who wish to deepen their understanding of statistical methods, develop their analytical skills, and critically interpret statistical results.
 
-Our articles combine statistical theory with practical applications, primarily using R. Depending on the topic, they include mathematical formulas, statistical analyses, R code, visualizations, and guidance on interpreting results.
+## What You Will Find Here
 
-### Available languages
+Our articles cover a range of topics, including:
 
-[![English](images/flag-gb.svg){width="24px"} **English** – Scientific articles and tutorials](/)
+Descriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R
 
-[![Deutsch](images/flag-de.svg){width="24px"} **Deutsch** – Wissenschaftliche Beiträge und Anleitungen](/de/)
+Each article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.
 
-[![Ελληνικά](images/flag-gr.svg){width="24px"} **Ελληνικά** – Επιστημονικά άρθρα και πρακτικοί οδηγοί](/el/)
+## Our Approach
 
-------------------------------------------------------------------------
+Statistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.
 
-## Scientific Articles
+R is the primary software environment used throughout the tutorials.
+
+## Languages
+
+Statistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic.
+
+## Statistics Campus – Main Website
+
+This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.
+
+**Main website:** <https://statistics-campus.com/>

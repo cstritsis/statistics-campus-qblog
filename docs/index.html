@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog: Statistics &amp; Data Analysis – Statistics Campus</title>
+<title>About – Statistics Campus</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,12 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-01c78b5cd655e4cd89133cf59d535862.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,73 +65,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -149,20 +88,20 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://blog.statistics-campus.com/"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./en/index.html"> 
 <span class="menu-text"><img src="./images/flag-gb.svg" alt="English" width="24"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://blog.statistics-campus.com/de/"> 
+    <a class="nav-link" href="./de/index.html"> 
 <span class="menu-text"><img src="./images/flag-de.svg" alt="Deutsch" width="24"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://blog.statistics-campus.com/el/"> 
+    <a class="nav-link" href="./el/index.html"> 
 <span class="menu-text"><img src="./images/flag-gr.svg" alt="Ελληνικά" width="24"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/cstritsis/statistics-campus-qblog"> <i class="bi bi-github" role="img">
@@ -182,101 +121,67 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog: Statistics &amp; Data Analysis</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVncmVzc2lvbg==">Regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGlzdGljYWwlMjBNb2RlbGluZw==">Statistical Modeling <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<div class="quarto-about-jolla">
+  <img src="logo_aktuell_1.png" class="about-image
+  rectangle " style="width: 320px;">
+ <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">About</h1>
+<p class="subtitle lead">Statistical Methods, Data Analysis &amp; Research</p>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header><main class="content" id="quarto-document-content">
+<section id="welcome-to-the-statistics-campus-blog" class="level1">
+<h1>Welcome to the Statistics Campus Blog</h1>
+<p>The Statistics Campus Blog focuses on statistical methods, data analysis, and their practical applications in academic research and professional contexts.</p>
+<p>It offers scientifically grounded articles, practical examples, and reproducible tutorials, primarily using R. The content is designed for students, researchers, and professionals who wish to deepen their understanding of statistical methods, develop their analytical skills, and critically interpret statistical results.</p>
+<section id="what-you-will-find-here" class="level2">
+<h2 data-anchor-id="what-you-will-find-here">What You Will Find Here</h2>
+<p>Our articles cover a range of topics, including:</p>
+<p>Descriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R</p>
+<p>Each article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.</p>
+</section>
+<section id="our-approach" class="level2">
+<h2 data-anchor-id="our-approach">Our Approach</h2>
+<p>Statistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.</p>
+<p>R is the primary software environment used throughout the tutorials.</p>
+</section>
+<section id="languages" class="level2">
+<h2 data-anchor-id="languages">Languages</h2>
+<p>Statistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic.</p>
+</section>
+<section id="statistics-campus-main-website" class="level2">
+<h2 data-anchor-id="statistics-campus-main-website">Statistics Campus – Main Website</h2>
+<p>This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.</p>
+<p><strong>Main website:</strong> <a href="https://statistics-campus.com/" class="uri">https://statistics-campus.com/</a></p>
 
 
-
-
-
-<section id="welcome-to-statistics-campus" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-statistics-campus">Welcome to Statistics Campus</h2>
-<p><strong>Statistics, Data Analysis &amp; Research Methods</strong></p>
-<p>Statistics Campus provides scientific explanations, practical examples, and step-by-step tutorials for students, researchers, and professionals interested in statistical methods and data analysis.</p>
-<p>Our articles combine statistical theory with practical applications, primarily using R. Depending on the topic, they include mathematical formulas, statistical analyses, R code, visualizations, and guidance on interpreting results.</p>
-<section id="available-languages" class="level3">
-<h3 class="anchored" data-anchor-id="available-languages">Available languages</h3>
-<p><a href="."><img src="images/flag-gb.svg" class="img-fluid" width="24" alt="English"> <strong>English</strong> – Scientific articles and tutorials</a></p>
-<p><a href=".\de/"><img src="images/flag-de.svg" class="img-fluid" width="24" alt="Deutsch"> <strong>Deutsch</strong> – Wissenschaftliche Beiträge und Anleitungen</a></p>
-<p><a href=".\el/"><img src="images/flag-gr.svg" class="img-fluid" width="24" alt="Ελληνικά"> <strong>Ελληνικά</strong> – Επιστημονικά άρθρα και πρακτικοί οδηγοί</a></p>
-<hr>
 </section>
 </section>
-<section id="scientific-articles" class="level2">
-<h2 class="anchored" data-anchor-id="scientific-articles">Scientific Articles</h2>
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UmVncmVzc2lvbiUyQ1IlMkNTdGF0aXN0aWNhbCUyME1vZGVsaW5n" data-listing-date-sort="1794693600000" data-listing-file-modified-sort="1794816407437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1102">
-<div class="thumbnail">
-<p><a href="./posts/multiple-linear-regression/index.html" class="no-external"></a></p><a href="./posts/multiple-linear-regression/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\multiple-linear-regression\index_files\figure-html\fig-explore-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/multiple-linear-regression/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/multiple-linear-regression/index.html" class="no-external">Multiple Linear Regression with R: A Step-by-Step Guide</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/multiple-linear-regression/index.html" class="no-external">Understanding, fitting, checking, and interpreting a model</a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UmVncmVzc2lvbg=='); return false;">
-Regression
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljYWwlMjBNb2RlbGluZw=='); return false;">
-Statistical Modeling
+</main> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://x.com/statcampus" class="about-link" rel="" target="">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
+  </a>
+  <a href="https://www.linkedin.com/in/christos-stritsis-3804494b/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com/cstritsis/statistics-campus-qblog" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/multiple-linear-regression/index.html" class="no-external">A practical guide to multiple linear regression in R, covering model estimation, diagnostics, prediction, and interpretation.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/multiple-linear-regression/index.html" class="no-external">
-<div class="listing-date">
-Nov 15, 2026
-</div>
-<div class="listing-author">
-Statistics Campus
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -297,13 +202,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -367,7 +265,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/blog\.statistics-campus\.com\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
