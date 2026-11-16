@@ -1,0 +1,250 @@
+---
+title: "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung"
+subtitle: "Mittelwerte vergleichen, Voraussetzungen prüfen und Ergebnisse interpretieren"
+author: "Statistics Campus"
+date: "2026-11-16"
+lang: de
+description: "Praxisorientierte Einführung in die einfaktorielle Varianzanalyse mit R und dem Datensatz PlantGrowth: explorative Analyse, F-Test, Diagnostik, Tukey-Test und Effektgröße."
+categories:
+  - ANOVA
+  - R
+  - Inferenzstatistik
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: false
+    code-copy: true
+    number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Was wirst du lernen?
+
+Die **einfaktorielle Varianzanalyse** (*One-Way Analysis of Variance*, ANOVA) prüft, ob sich die Mittelwerte einer metrischen Zielvariable zwischen mehreren unabhängigen Gruppen unterscheiden. In diesem Beitrag werden drei Gruppen mit R verglichen. Anschließend folgen die Interpretation des F-Tests, die Prüfung zentraler Voraussetzungen, ein Post-hoc-Vergleich und die Berechnung einer Effektgröße.
+
+**Vorkenntnisse:** Mittelwert, Standardabweichung, Boxplot und Grundideen des Hypothesentestens. Der Beitrag richtet sich an Studierende in den ersten Studiensemestern, insbesondere in den Sozial- und Verhaltenswissenschaften.
+
+## Forschungsfrage und Datensatz
+
+Als Beispiel dient `PlantGrowth` aus dem in R enthaltenen Paket `datasets`. Der Datensatz umfasst **30 Beobachtungen** aus drei Gruppen mit jeweils zehn Pflanzen: eine Kontrollgruppe (`ctrl`) und zwei Behandlungsgruppen (`trt1`, `trt2`). `weight` enthält das gemessene Trockengewicht der Pflanzen, `group` die Gruppenzugehörigkeit. Die Maßeinheit des Gewichts wird in der R-Dokumentation nicht angegeben. Sie wird daher hier nicht ergänzt (R Core Team, o. J.-a).
+
+**Forschungsfrage:** Unterscheidet sich das mittlere Trockengewicht zwischen den drei Versuchsgruppen?
+
+```{r}
+#| label: daten-vorbereiten
+
+data("PlantGrowth", package = "datasets")
+pflanzen <- PlantGrowth
+
+str(pflanzen)
+head(pflanzen)
+summary(pflanzen)
+colSums(is.na(pflanzen))
+```
+
+Der Datensatz ist klein und vollständig. Damit eignet er sich für die Einführung in die Methode, erlaubt jedoch keine pauschalen Aussagen über andere Pflanzenarten oder Anbaubedingungen.
+
+## Was prüft die ANOVA?
+
+Bei zwei unabhängigen Gruppen kann ein t-Test verwendet werden. Bei drei oder mehr Gruppen erlaubt die ANOVA einen **gemeinsamen Test** der Mittelwertgleichheit, ohne mehrere ungeschützte Einzeltests durchzuführen (Eid et al., 2017; Agresti & Finlay, 2014).
+
+Für unsere drei Gruppen lauten die Hypothesen:
+
+$$
+H_0: \mu_{\mathrm{ctrl}} = \mu_{\mathrm{trt1}} = \mu_{\mathrm{trt2}}
+$$
+
+$$
+H_1: \text{Mindestens zwei Gruppenmittelwerte unterscheiden sich.}
+$$
+
+Die ANOVA vergleicht die **Variation zwischen den Gruppen** mit der **Variation innerhalb der Gruppen**. Ist die Variation zwischen den Gruppen im Verhältnis zur inneren Streuung groß, fällt die F-Statistik hoch aus. Ein signifikanter F-Test zeigt zunächst nur, dass nicht alle Populationsmittelwerte gleich sind. **Welche Gruppen sich unterscheiden**, muss separat untersucht werden.
+
+## Daten explorativ untersuchen
+
+Vor jedem Signifikanztest empfiehlt sich ein Blick auf Gruppengrößen, Mittelwerte, Standardabweichungen und die beobachteten Verteilungen.
+
+```{r}
+#| label: deskriptive-statistik
+
+anzahl <- aggregate(weight ~ group, data = pflanzen, FUN = length)
+mittelwerte <- aggregate(weight ~ group, data = pflanzen, FUN = mean)
+streuungen <- aggregate(weight ~ group, data = pflanzen, FUN = sd)
+
+deskriptiv <- data.frame(
+  Gruppe = anzahl$group,
+  n = anzahl$weight,
+  Mittelwert = round(mittelwerte$weight, 3),
+  SD = round(streuungen$weight, 3)
+)
+deskriptiv
+```
+
+```{r}
+#| label: fig-boxplot
+#| fig-cap: "Trockengewicht nach Versuchsgruppe. Die Punkte zeigen einzelne Beobachtungen."
+#| fig-width: 8
+#| fig-height: 5
+
+set.seed(123)
+boxplot(weight ~ group, data = pflanzen,
+        col = "gray90", border = "gray35",
+        xlab = "Versuchsgruppe", ylab = "Trockengewicht",
+        main = "Pflanzengewicht in drei Gruppen")
+stripchart(weight ~ group, data = pflanzen,
+           vertical = TRUE, method = "jitter", jitter = 0.12,
+           pch = 19, col = "steelblue", add = TRUE)
+```
+
+Die deskriptiven Mittelwerte betragen `{r} sprintf("%.3f", mittelwerte$weight[1])` (`ctrl`), `{r} sprintf("%.3f", mittelwerte$weight[2])` (`trt1`) und `{r} sprintf("%.3f", mittelwerte$weight[3])` (`trt2`). Diese Unterschiede allein entscheiden noch nicht darüber, ob ein statistisch belastbarer Gruppenunterschied vorliegt.
+
+## Einfaktorielle ANOVA in R berechnen
+
+Die Funktion `aov()` aus dem mitgelieferten Paket `stats` passt das Modell an. Zusätzliche Pakete sind nicht erforderlich.
+
+```{r}
+#| label: anova-modell
+
+modell <- aov(weight ~ group, data = pflanzen)
+anova_tabelle <- summary(modell)[[1]]
+anova_tabelle
+```
+
+Die Formel `weight ~ group` bedeutet: Das Trockengewicht wird in Abhängigkeit von der Gruppenzugehörigkeit modelliert. Die Tabelle enthält unter anderem die Freiheitsgrade (`Df`), Quadratsummen (`Sum Sq`), mittleren Quadratsummen (`Mean Sq`), den F-Wert (`F value`) und den p-Wert (`Pr(>F)`).
+
+```{r}
+#| label: anova-kennzahlen
+
+f_wert <- anova_tabelle[1, "F value"]
+p_wert <- anova_tabelle[1, "Pr(>F)"]
+df1 <- anova_tabelle[1, "Df"]
+df2 <- anova_tabelle[2, "Df"]
+
+c(F = f_wert, df_zwischen = df1,
+  df_innerhalb = df2, p = p_wert)
+```
+
+Für die Beispieldaten ergibt sich *F*(`{r} df1`, `{r} df2`) = `{r} sprintf("%.2f", f_wert)` mit *p* = `{r} sprintf("%.4f", p_wert)`. Beim vorab festgelegten Signifikanzniveau von 5 % wird die Nullhypothese gleicher Gruppenmittelwerte verworfen. Der Test sagt weder, dass jede Gruppe von jeder anderen abweicht, noch belegt er die Ursache des Unterschieds.
+
+## Voraussetzungen kritisch prüfen
+
+Die klassische einfaktorielle ANOVA setzt insbesondere **unabhängige Beobachtungen**, eine näherungsweise **Normalverteilung der Fehler innerhalb der Gruppen** und **vergleichbare Fehlervarianzen** voraus. Die Unabhängigkeit folgt aus dem Studiendesign und lässt sich nicht durch einen Residuenplot nachträglich bestätigen (Eid et al., 2017).
+
+```{r}
+#| label: fig-diagnostik
+#| fig-cap: "Modelldiagnostik: Residuen gegen vorhergesagte Werte und Normal-Q-Q-Diagramm."
+#| fig-width: 10
+#| fig-height: 4.5
+
+alte_grafikparameter <- par(no.readonly = TRUE)
+par(mfrow = c(1, 2), mar = c(4.5, 4.5, 3, 1.5))
+plot(modell, which = 1, id.n = 0)
+plot(modell, which = 2, id.n = 0)
+par(alte_grafikparameter)
+```
+
+Im Diagramm *Residuals vs Fitted* ist insbesondere auf unterschiedliche Streuungsbreiten und auffällige Einzelwerte zu achten. Im Q-Q-Diagramm sprechen starke systematische Abweichungen von der Referenzlinie gegen die Normalitätsannahme. Bei kleinen Gruppen sind solche Grafiken nur begrenzt aussagekräftig. Automatische Tests ersetzen die fachliche Prüfung nicht.
+
+Eine ergänzende, relativ robuste Prüfung der Varianzgleichheit bietet der Fligner-Killeen-Test:
+
+```{r}
+#| label: varianzhomogenitaet
+
+fligner.test(weight ~ group, data = pflanzen)
+```
+
+Ein nicht signifikanter Test **beweist keine gleichen Varianzen**. Bei deutlich unterschiedlichen Varianzen ist die Welch-ANOVA eine wichtige Alternative, die sich ebenfalls mit Base R berechnen lässt:
+
+```{r}
+#| label: welch-alternative
+
+oneway.test(weight ~ group, data = pflanzen,
+            var.equal = FALSE)
+```
+
+Die Welch-ANOVA wird hier als Ausblick gezeigt. Sie ersetzt nicht automatisch die sorgfältige Wahl geeigneter anschließender Gruppenvergleiche.
+
+## Welche Gruppen unterscheiden sich? Tukey-Test
+
+Nach dem gemeinsamen F-Test untersuchen **Post-hoc-Vergleiche**, zwischen welchen Gruppen Unterschiede liegen. `TukeyHSD()` kontrolliert die familienweise Fehlerwahrscheinlichkeit für die paarweisen Vergleiche im klassischen ANOVA-Modell (R Core Team, o. J.-b).
+
+```{r}
+#| label: tukey-posthoc
+
+tukey <- TukeyHSD(modell, which = "group")
+tukey
+```
+
+Die Spalte `diff` enthält die Mittelwertdifferenz, `lwr` und `upr` die Grenzen des simultanen Konfidenzintervalls sowie `p adj` den für Mehrfachvergleiche angepassten p-Wert. Im vorliegenden Beispiel ist der Unterschied zwischen `trt1` und `trt2` signifikant (`{r} sprintf("p = %.3f", tukey$group["trt2-trt1", "p adj"])`). Die beiden Vergleiche mit der Kontrollgruppe erreichen dagegen das Niveau von 5 % nicht. Das bedeutet nicht, dass diese Gruppen in der Population identisch sind.
+
+## Wie groß ist der Gruppeneffekt?
+
+Ein p-Wert allein beschreibt nicht die Größe eines beobachteten Effekts. Bei der einfaktoriellen ANOVA kann **Eta-Quadrat** ($\eta^2$) als Anteil der durch die Gruppenzugehörigkeit erklärten Variation an der Gesamtvariation berechnet werden:
+
+$$
+\eta^2 = \frac{SS_{\mathrm{zwischen}}}{SS_{\mathrm{gesamt}}}.
+$$
+
+```{r}
+#| label: effektgroesse
+
+ss_zwischen <- anova_tabelle[1, "Sum Sq"]
+ss_fehler <- anova_tabelle[2, "Sum Sq"]
+eta2 <- ss_zwischen / (ss_zwischen + ss_fehler)
+round(eta2, 3)
+```
+
+Hier beträgt $\eta^2$ = `{r} sprintf("%.3f", eta2)`. Im vorliegenden Datensatz hängen damit rund `{r} sprintf("%.1f", 100 * eta2)` % der beobachteten Gesamtvariation des Trockengewichts mit den Gruppenunterschieden zusammen. Dies ist eine **deskriptive Stichproben-Effektgröße**, kein Beleg für Kausalität. Eine Einordnung als „klein“, „mittel“ oder „groß“ verlangt den jeweiligen fachlichen Kontext.
+
+
+
+::: {.callout-note}
+## Zusammenhang zwischen Eta-Quadrat und R²
+
+Bei der klassischen einfaktoriellen Varianzanalyse entspricht **Eta-Quadrat ($\eta^2$)** mathematisch dem **Bestimmtheitsmaß ($R^2$)** des äquivalenten linearen Regressionsmodells.
+
+Beide Kennzahlen beschreiben den Anteil der beobachteten Gesamtvariation der abhängigen Variablen, der durch das Modell erklärt wird.
+
+Im vorliegenden Beispiel mit dem Datensatz `PlantGrowth` beträgt dieser Anteil rund **26,4 %**.
+
+Während $R^2$ häufig zur Beschreibung der Modellgüte verwendet wird, dient $\eta^2$ in der Varianzanalyse zur Quantifizierung des Gruppeneffekts.
+
+**Wichtig:** Diese Gleichheit gilt für die klassische einfaktorielle ANOVA und das entsprechende lineare Modell mit Achsenabschnitt. Bei mehrfaktoriellen Modellen und insbesondere beim partiellen Eta-Quadrat ($\eta_p^2$) ist diese Unterscheidung zu beachten.
+:::
+
+
+## Beispiel für einen wissenschaftlichen Ergebnisbericht
+
+Eine einfaktorielle Varianzanalyse untersuchte Unterschiede im Trockengewicht zwischen einer Kontrollgruppe und zwei Behandlungsgruppen (*N* = `{r} nrow(pflanzen)`). Der Gruppeneffekt war statistisch signifikant, *F*(`{r} df1`, `{r} df2`) = `{r} sprintf("%.2f", f_wert)`, *p* = `{r} sprintf("%.3f", p_wert)`, $\eta^2$ = `{r} sprintf("%.3f", eta2)`. Tukey-adjustierte Paarvergleiche ergaben einen signifikanten Unterschied zwischen den beiden Behandlungsgruppen (*p* = `{r} sprintf("%.3f", tukey$group["trt2-trt1", "p adj"])`), nicht jedoch zwischen den jeweiligen Behandlungsgruppen und der Kontrollgruppe. Die Interpretation setzt voraus, dass das Studiendesign und die Modellannahmen hinreichend geeignet sind.
+
+## Probiere es selbst aus
+
+1.  Welche Gruppe weist den höchsten Mittelwert auf, und reicht diese Information für eine Schlussfolgerung aus?
+2.  Ändert sich das ANOVA-Ergebnis, wenn die Gruppenbezeichnungen anders angeordnet werden?
+3.  Welche Informationen enthält ein Tukey-Konfidenzintervall zusätzlich zum angepassten p-Wert?
+4.  Warum lässt sich die Unabhängigkeit der Beobachtungen nicht aus einem Q-Q-Diagramm ableiten?
+5.  Vergleiche das Ergebnis von `oneway.test()` mit dem klassischen F-Test. Welche Modellannahme unterscheidet die beiden Verfahren?
+
+## Fazit
+
+Die einfaktorielle ANOVA verbindet eine klare Forschungsfrage mit einem Modell zum Vergleich mehrerer Gruppenmittelwerte. Für eine nachvollziehbare Auswertung reichen `aov()` und ein p-Wert jedoch nicht aus. Erst durch deskriptive Analyse, Prüfung des Designs und der Voraussetzungen, passende Post-hoc-Vergleiche und eine Effektgröße entsteht ein interpretierbarer Ergebnisbericht. Der Datensatz `PlantGrowth` ermöglicht, diese Arbeitsschritte ohne zusätzliche R-Pakete nachzuvollziehen.
+
+## Literatur
+
+Agresti, A., & Finlay, B. (2014). *Statistical methods for the social sciences* (4. Aufl., Pearson New International Edition). Pearson.
+
+Döring, N. (2023). *Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften* (6. Aufl.). Springer. https://doi.org/10.1007/978-3-662-64762-2
+
+Eid, M., Gollwitzer, M., & Schmitt, M. (2017). *Statistik und Forschungsmethoden* (5., korrigierte Aufl.). Beltz.
+
+R Core Team. (o. J.-a). *PlantGrowth: Results from an experiment on plant growth* \[R-Dokumentation\]. https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/PlantGrowth.html
+
+R Core Team. (o. J.-b). *TukeyHSD: Compute Tukey honest significant differences* \[R-Dokumentation\]. https://search.r-project.org/R/refmans/stats/html/TukeyHSD.html
+
+R Core Team. (o. J.-c). *aov: Fit an analysis of variance model* \[R-Dokumentation\]. https://stat.ethz.ch/R-manual/R-devel/library/stats/html/aov.html
+
+R Core Team. (o. J.-d). *oneway.test: Test for equal means in a one-way layout* \[R-Dokumentation\]. https://stat.ethz.ch/R-manual/R-devel/library/stats/html/oneway.test.html

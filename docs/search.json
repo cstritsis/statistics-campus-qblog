@@ -91,53 +91,67 @@
     "text": "12 Further reading\n\nR Core Team. R documentation: lm() and plot.lm().\nhttps://search.r-project.org/R/refmans/stats/html/lm.html and\nhttps://search.r-project.org/R/refmans/stats/html/plot.lm.html\nQuarto. Using R. https://quarto.org/docs/computations/r.html"
   },
   {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
-    "title": "Blog: Statistics & Data Analysis",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
     "section": "",
-    "text": "The Statistics Campus Blog publishes scientifically grounded articles, practical examples, and reproducible tutorials on statistical methods and data analysis.\nThe articles are intended for students, researchers, and professionals who wish to deepen their statistical knowledge and develop practical analytical skills.\nStatistical theory is combined with applications, primarily using R. Depending on the topic, the articles include mathematical formulas, statistical analyses, R code, visualizations, model diagnostics, and guidance on interpreting results.\n\n\n\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+    "text": "The Statistics Campus Blog focuses on statistical methods, data analysis, and their practical applications in academic research and professional contexts.\nIt offers scientifically grounded articles, practical examples, and reproducible tutorials, primarily using R. The content is designed for students, researchers, and professionals who wish to deepen their understanding of statistical methods, develop their analytical skills, and critically interpret statistical results.\n\n\nOur articles cover a range of topics, including:\nDescriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.\n\n\n\nStatistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials.\n\n\n\nStatistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic.\n\n\n\nThis Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
   },
   {
-    "objectID": "en/index.html#welcome-to-the-statistics-campus-blog",
-    "href": "en/index.html#welcome-to-the-statistics-campus-blog",
-    "title": "Blog: Statistics & Data Analysis",
+    "objectID": "index.html#what-you-will-find-here",
+    "href": "index.html#what-you-will-find-here",
+    "title": "About",
     "section": "",
-    "text": "The Statistics Campus Blog publishes scientifically grounded articles, practical examples, and reproducible tutorials on statistical methods and data analysis.\nThe articles are intended for students, researchers, and professionals who wish to deepen their statistical knowledge and develop practical analytical skills.\nStatistical theory is combined with applications, primarily using R. Depending on the topic, the articles include mathematical formulas, statistical analyses, R code, visualizations, model diagnostics, and guidance on interpreting results.\n\n\n\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+    "text": "Our articles cover a range of topics, including:\nDescriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results."
   },
   {
-    "objectID": "en/index.html#scientific-articles",
-    "href": "en/index.html#scientific-articles",
-    "title": "Blog: Statistics & Data Analysis",
-    "section": "Scientific Articles",
-    "text": "Scientific Articles"
-  },
-  {
-    "objectID": "de/index.html",
-    "href": "de/index.html",
-    "title": "Blog: Statistik & Datenanalyse",
+    "objectID": "index.html#our-approach",
+    "href": "index.html#our-approach",
+    "title": "About",
     "section": "",
-    "text": "Der Statistics-Campus-Blog veröffentlicht wissenschaftlich fundierte Fachbeiträge, praxisorientierte Beispiele und reproduzierbare Anleitungen zu statistischen Methoden und zur Datenanalyse.\nDie Beiträge richten sich an Studierende, Forschende und Fachkräfte, die ihre statistischen Kenntnisse vertiefen und ihre Fähigkeiten zur eigenständigen Datenanalyse weiterentwickeln möchten.\nIm Mittelpunkt steht die Verbindung statistischer Grundlagen mit ihrer praktischen Anwendung, überwiegend unter Verwendung von R. Je nach Thema umfassen die Beiträge mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen, Modelldiagnostik und Hinweise zur Interpretation der Ergebnisse."
+    "text": "Statistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials."
   },
   {
-    "objectID": "de/index.html#willkommen-im-statistics-campus-blog",
-    "href": "de/index.html#willkommen-im-statistics-campus-blog",
-    "title": "Blog: Statistik & Datenanalyse",
+    "objectID": "index.html#languages",
+    "href": "index.html#languages",
+    "title": "About",
     "section": "",
-    "text": "Der Statistics-Campus-Blog veröffentlicht wissenschaftlich fundierte Fachbeiträge, praxisorientierte Beispiele und reproduzierbare Anleitungen zu statistischen Methoden und zur Datenanalyse.\nDie Beiträge richten sich an Studierende, Forschende und Fachkräfte, die ihre statistischen Kenntnisse vertiefen und ihre Fähigkeiten zur eigenständigen Datenanalyse weiterentwickeln möchten.\nIm Mittelpunkt steht die Verbindung statistischer Grundlagen mit ihrer praktischen Anwendung, überwiegend unter Verwendung von R. Je nach Thema umfassen die Beiträge mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen, Modelldiagnostik und Hinweise zur Interpretation der Ergebnisse."
+    "text": "Statistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic."
   },
   {
-    "objectID": "de/index.html#verfügbare-sprachen",
-    "href": "de/index.html#verfügbare-sprachen",
-    "title": "Blog: Statistik & Datenanalyse",
-    "section": "Verfügbare Sprachen",
-    "text": "Verfügbare Sprachen\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+    "objectID": "index.html#statistics-campus-main-website",
+    "href": "index.html#statistics-campus-main-website",
+    "title": "About",
+    "section": "",
+    "text": "This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
   },
   {
-    "objectID": "de/index.html#wissenschaftliche-beiträge",
-    "href": "de/index.html#wissenschaftliche-beiträge",
-    "title": "Blog: Statistik & Datenanalyse",
-    "section": "Wissenschaftliche Beiträge",
-    "text": "Wissenschaftliche Beiträge"
+    "objectID": "el/index.html",
+    "href": "el/index.html",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "",
+    "text": "Το Statistics Campus προσφέρει επιστημονικά τεκμηριωμένες εξηγήσεις, πρακτικά παραδείγματα και αναλυτικούς οδηγούς για φοιτητές, ερευνητές και επαγγελματίες που ενδιαφέρονται για τη στατιστική και την ανάλυση δεδομένων.\nΤα άρθρα συνδυάζουν τη στατιστική θεωρία με πρακτικές εφαρμογές, κυρίως μέσω της γλώσσας προγραμματισμού R. Ανάλογα με το θέμα, περιλαμβάνουν μαθηματικούς τύπους, στατιστικές αναλύσεις, κώδικα R, γραφήματα και οδηγίες για την ερμηνεία των αποτελεσμάτων."
+  },
+  {
+    "objectID": "el/index.html#καλώς-ήρθατε-στο-statistics-campus",
+    "href": "el/index.html#καλώς-ήρθατε-στο-statistics-campus",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "",
+    "text": "Το Statistics Campus προσφέρει επιστημονικά τεκμηριωμένες εξηγήσεις, πρακτικά παραδείγματα και αναλυτικούς οδηγούς για φοιτητές, ερευνητές και επαγγελματίες που ενδιαφέρονται για τη στατιστική και την ανάλυση δεδομένων.\nΤα άρθρα συνδυάζουν τη στατιστική θεωρία με πρακτικές εφαρμογές, κυρίως μέσω της γλώσσας προγραμματισμού R. Ανάλογα με το θέμα, περιλαμβάνουν μαθηματικούς τύπους, στατιστικές αναλύσεις, κώδικα R, γραφήματα και οδηγίες για την ερμηνεία των αποτελεσμάτων."
+  },
+  {
+    "objectID": "el/index.html#διαθέσιμες-γλώσσες",
+    "href": "el/index.html#διαθέσιμες-γλώσσες",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "Διαθέσιμες γλώσσες",
+    "text": "Διαθέσιμες γλώσσες\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+  },
+  {
+    "objectID": "el/index.html#επιστημονικά-άρθρα",
+    "href": "el/index.html#επιστημονικά-άρθρα",
+    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "section": "Επιστημονικά άρθρα",
+    "text": "Επιστημονικά άρθρα\nΕδώ θα προστίθενται σταδιακά επιστημονικά άρθρα και πρακτικοί οδηγοί στα ελληνικά, με έμφαση στη στατιστική ανάλυση δεδομένων και στις εφαρμογές της R."
   },
   {
     "objectID": "about.html",
@@ -175,66 +189,143 @@
     "text": "This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
   },
   {
-    "objectID": "el/index.html",
-    "href": "el/index.html",
-    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "objectID": "de/index.html",
+    "href": "de/index.html",
+    "title": "Blog: Statistik & Datenanalyse",
     "section": "",
-    "text": "Το Statistics Campus προσφέρει επιστημονικά τεκμηριωμένες εξηγήσεις, πρακτικά παραδείγματα και αναλυτικούς οδηγούς για φοιτητές, ερευνητές και επαγγελματίες που ενδιαφέρονται για τη στατιστική και την ανάλυση δεδομένων.\nΤα άρθρα συνδυάζουν τη στατιστική θεωρία με πρακτικές εφαρμογές, κυρίως μέσω της γλώσσας προγραμματισμού R. Ανάλογα με το θέμα, περιλαμβάνουν μαθηματικούς τύπους, στατιστικές αναλύσεις, κώδικα R, γραφήματα και οδηγίες για την ερμηνεία των αποτελεσμάτων."
+    "text": "Der Statistics-Campus-Blog veröffentlicht wissenschaftlich fundierte Fachbeiträge, praxisorientierte Beispiele und reproduzierbare Anleitungen zu statistischen Methoden und zur Datenanalyse.\nDie Beiträge richten sich an Studierende, Forschende und Fachkräfte, die ihre statistischen Kenntnisse vertiefen und ihre Fähigkeiten zur eigenständigen Datenanalyse weiterentwickeln möchten.\nIm Mittelpunkt steht die Verbindung statistischer Grundlagen mit ihrer praktischen Anwendung, überwiegend unter Verwendung von R. Je nach Thema umfassen die Beiträge mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen, Modelldiagnostik und Hinweise zur Interpretation der Ergebnisse."
   },
   {
-    "objectID": "el/index.html#καλώς-ήρθατε-στο-statistics-campus",
-    "href": "el/index.html#καλώς-ήρθατε-στο-statistics-campus",
-    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
+    "objectID": "de/index.html#willkommen-im-statistics-campus-blog",
+    "href": "de/index.html#willkommen-im-statistics-campus-blog",
+    "title": "Blog: Statistik & Datenanalyse",
     "section": "",
-    "text": "Το Statistics Campus προσφέρει επιστημονικά τεκμηριωμένες εξηγήσεις, πρακτικά παραδείγματα και αναλυτικούς οδηγούς για φοιτητές, ερευνητές και επαγγελματίες που ενδιαφέρονται για τη στατιστική και την ανάλυση δεδομένων.\nΤα άρθρα συνδυάζουν τη στατιστική θεωρία με πρακτικές εφαρμογές, κυρίως μέσω της γλώσσας προγραμματισμού R. Ανάλογα με το θέμα, περιλαμβάνουν μαθηματικούς τύπους, στατιστικές αναλύσεις, κώδικα R, γραφήματα και οδηγίες για την ερμηνεία των αποτελεσμάτων."
+    "text": "Der Statistics-Campus-Blog veröffentlicht wissenschaftlich fundierte Fachbeiträge, praxisorientierte Beispiele und reproduzierbare Anleitungen zu statistischen Methoden und zur Datenanalyse.\nDie Beiträge richten sich an Studierende, Forschende und Fachkräfte, die ihre statistischen Kenntnisse vertiefen und ihre Fähigkeiten zur eigenständigen Datenanalyse weiterentwickeln möchten.\nIm Mittelpunkt steht die Verbindung statistischer Grundlagen mit ihrer praktischen Anwendung, überwiegend unter Verwendung von R. Je nach Thema umfassen die Beiträge mathematische Formeln, statistische Auswertungen, R-Code, Visualisierungen, Modelldiagnostik und Hinweise zur Interpretation der Ergebnisse."
   },
   {
-    "objectID": "el/index.html#διαθέσιμες-γλώσσες",
-    "href": "el/index.html#διαθέσιμες-γλώσσες",
-    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
-    "section": "Διαθέσιμες γλώσσες",
-    "text": "Διαθέσιμες γλώσσες\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
+    "objectID": "de/index.html#verfügbare-sprachen",
+    "href": "de/index.html#verfügbare-sprachen",
+    "title": "Blog: Statistik & Datenanalyse",
+    "section": "Verfügbare Sprachen",
+    "text": "Verfügbare Sprachen\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
   },
   {
-    "objectID": "el/index.html#επιστημονικά-άρθρα",
-    "href": "el/index.html#επιστημονικά-άρθρα",
-    "title": "Ιστολόγιο: Στατιστική & Ανάλυση Δεδομένων",
-    "section": "Επιστημονικά άρθρα",
-    "text": "Επιστημονικά άρθρα\nΕδώ θα προστίθενται σταδιακά επιστημονικά άρθρα και πρακτικοί οδηγοί στα ελληνικά, με έμφαση στη στατιστική ανάλυση δεδομένων και στις εφαρμογές της R."
+    "objectID": "de/index.html#wissenschaftliche-beiträge",
+    "href": "de/index.html#wissenschaftliche-beiträge",
+    "title": "Blog: Statistik & Datenanalyse",
+    "section": "Wissenschaftliche Beiträge",
+    "text": "Wissenschaftliche Beiträge"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Blog: Statistics & Data Analysis",
     "section": "",
-    "text": "The Statistics Campus Blog focuses on statistical methods, data analysis, and their practical applications in academic research and professional contexts.\nIt offers scientifically grounded articles, practical examples, and reproducible tutorials, primarily using R. The content is designed for students, researchers, and professionals who wish to deepen their understanding of statistical methods, develop their analytical skills, and critically interpret statistical results.\n\n\nOur articles cover a range of topics, including:\nDescriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results.\n\n\n\nStatistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials.\n\n\n\nStatistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic.\n\n\n\nThis Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
+    "text": "The Statistics Campus Blog publishes scientifically grounded articles, practical examples, and reproducible tutorials on statistical methods and data analysis.\nThe articles are intended for students, researchers, and professionals who wish to deepen their statistical knowledge and develop practical analytical skills.\nStatistical theory is combined with applications, primarily using R. Depending on the topic, the articles include mathematical formulas, statistical analyses, R code, visualizations, model diagnostics, and guidance on interpreting results.\n\n\n\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
   },
   {
-    "objectID": "index.html#what-you-will-find-here",
-    "href": "index.html#what-you-will-find-here",
-    "title": "About",
+    "objectID": "en/index.html#welcome-to-the-statistics-campus-blog",
+    "href": "en/index.html#welcome-to-the-statistics-campus-blog",
+    "title": "Blog: Statistics & Data Analysis",
     "section": "",
-    "text": "Our articles cover a range of topics, including:\nDescriptive and inferential statistics Regression analysis and statistical modeling Analysis of variance (ANOVA) Multivariate statistical methods Statistical visualization and interpretation Reproducible data analysis with R\nEach article aims to connect statistical theory with practical applications, addressing methodological assumptions, analytical procedures, and the interpretation of results."
+    "text": "The Statistics Campus Blog publishes scientifically grounded articles, practical examples, and reproducible tutorials on statistical methods and data analysis.\nThe articles are intended for students, researchers, and professionals who wish to deepen their statistical knowledge and develop practical analytical skills.\nStatistical theory is combined with applications, primarily using R. Depending on the topic, the articles include mathematical formulas, statistical analyses, R code, visualizations, model diagnostics, and guidance on interpreting results.\n\n\n\n English – Scientific articles and tutorials\n Deutsch – Wissenschaftliche Beiträge und Anleitungen\n Ελληνικά – Επιστημονικά άρθρα και πρακτικοί οδηγοί"
   },
   {
-    "objectID": "index.html#our-approach",
-    "href": "index.html#our-approach",
-    "title": "About",
-    "section": "",
-    "text": "Statistics Campus emphasizes methodological transparency, reproducibility, and critical interpretation. Rather than focusing exclusively on statistical significance, the articles also consider effect sizes, uncertainty, model assumptions, and the substantive relevance of analytical findings.\nR is the primary software environment used throughout the tutorials."
+    "objectID": "en/index.html#scientific-articles",
+    "href": "en/index.html#scientific-articles",
+    "title": "Blog: Statistics & Data Analysis",
+    "section": "Scientific Articles",
+    "text": "Scientific Articles"
   },
   {
-    "objectID": "index.html#languages",
-    "href": "index.html#languages",
-    "title": "About",
+    "objectID": "posts_de/einfaktorielle-anova/index.html",
+    "href": "posts_de/einfaktorielle-anova/index.html",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
     "section": "",
-    "text": "Statistics Campus publishes content in English, German, and Greek. Articles are developed and translated progressively, depending on the topic."
+    "text": "Die einfaktorielle Varianzanalyse (One-Way Analysis of Variance, ANOVA) prüft, ob sich die Mittelwerte einer metrischen Zielvariable zwischen mehreren unabhängigen Gruppen unterscheiden. In diesem Beitrag werden drei Gruppen mit R verglichen. Anschließend folgen die Interpretation des F-Tests, die Prüfung zentraler Voraussetzungen, ein Post-hoc-Vergleich und die Berechnung einer Effektgröße.\nVorkenntnisse: Mittelwert, Standardabweichung, Boxplot und Grundideen des Hypothesentestens. Der Beitrag richtet sich an Studierende in den ersten Studiensemestern, insbesondere in den Sozial- und Verhaltenswissenschaften."
   },
   {
-    "objectID": "index.html#statistics-campus-main-website",
-    "href": "index.html#statistics-campus-main-website",
-    "title": "About",
+    "objectID": "posts_de/einfaktorielle-anova/index.html#was-wirst-du-lernen",
+    "href": "posts_de/einfaktorielle-anova/index.html#was-wirst-du-lernen",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
     "section": "",
-    "text": "This Quarto blog complements the main Statistics Campus website, which provides further information about statistical support, data analysis, and research-related services.\nMain website: https://statistics-campus.com/"
+    "text": "Die einfaktorielle Varianzanalyse (One-Way Analysis of Variance, ANOVA) prüft, ob sich die Mittelwerte einer metrischen Zielvariable zwischen mehreren unabhängigen Gruppen unterscheiden. In diesem Beitrag werden drei Gruppen mit R verglichen. Anschließend folgen die Interpretation des F-Tests, die Prüfung zentraler Voraussetzungen, ein Post-hoc-Vergleich und die Berechnung einer Effektgröße.\nVorkenntnisse: Mittelwert, Standardabweichung, Boxplot und Grundideen des Hypothesentestens. Der Beitrag richtet sich an Studierende in den ersten Studiensemestern, insbesondere in den Sozial- und Verhaltenswissenschaften."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#forschungsfrage-und-datensatz",
+    "href": "posts_de/einfaktorielle-anova/index.html#forschungsfrage-und-datensatz",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "2 Forschungsfrage und Datensatz",
+    "text": "2 Forschungsfrage und Datensatz\nAls Beispiel dient PlantGrowth aus dem in R enthaltenen Paket datasets. Der Datensatz umfasst 30 Beobachtungen aus drei Gruppen mit jeweils zehn Pflanzen: eine Kontrollgruppe (ctrl) und zwei Behandlungsgruppen (trt1, trt2). weight enthält das gemessene Trockengewicht der Pflanzen, group die Gruppenzugehörigkeit. Die Maßeinheit des Gewichts wird in der R-Dokumentation nicht angegeben. Sie wird daher hier nicht ergänzt (R Core Team, o. J.-a).\nForschungsfrage: Unterscheidet sich das mittlere Trockengewicht zwischen den drei Versuchsgruppen?\n\ndata(\"PlantGrowth\", package = \"datasets\")\npflanzen &lt;- PlantGrowth\n\nstr(pflanzen)\n\n'data.frame':   30 obs. of  2 variables:\n $ weight: num  4.17 5.58 5.18 6.11 4.5 4.61 5.17 4.53 5.33 5.14 ...\n $ group : Factor w/ 3 levels \"ctrl\",\"trt1\",..: 1 1 1 1 1 1 1 1 1 1 ...\n\nhead(pflanzen)\n\n  weight group\n1   4.17  ctrl\n2   5.58  ctrl\n3   5.18  ctrl\n4   6.11  ctrl\n5   4.50  ctrl\n6   4.61  ctrl\n\nsummary(pflanzen)\n\n     weight       group   \n Min.   :3.590   ctrl:10  \n 1st Qu.:4.550   trt1:10  \n Median :5.155   trt2:10  \n Mean   :5.073            \n 3rd Qu.:5.530            \n Max.   :6.310            \n\ncolSums(is.na(pflanzen))\n\nweight  group \n     0      0 \n\n\nDer Datensatz ist klein und vollständig. Damit eignet er sich für die Einführung in die Methode, erlaubt jedoch keine pauschalen Aussagen über andere Pflanzenarten oder Anbaubedingungen."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#was-prüft-die-anova",
+    "href": "posts_de/einfaktorielle-anova/index.html#was-prüft-die-anova",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "3 Was prüft die ANOVA?",
+    "text": "3 Was prüft die ANOVA?\nBei zwei unabhängigen Gruppen kann ein t-Test verwendet werden. Bei drei oder mehr Gruppen erlaubt die ANOVA einen gemeinsamen Test der Mittelwertgleichheit, ohne mehrere ungeschützte Einzeltests durchzuführen (Eid et al., 2017; Agresti & Finlay, 2014).\nFür unsere drei Gruppen lauten die Hypothesen:\n\\[\nH_0: \\mu_{\\mathrm{ctrl}} = \\mu_{\\mathrm{trt1}} = \\mu_{\\mathrm{trt2}}\n\\]\n\\[\nH_1: \\text{Mindestens zwei Gruppenmittelwerte unterscheiden sich.}\n\\]\nDie ANOVA vergleicht die Variation zwischen den Gruppen mit der Variation innerhalb der Gruppen. Ist die Variation zwischen den Gruppen im Verhältnis zur inneren Streuung groß, fällt die F-Statistik hoch aus. Ein signifikanter F-Test zeigt zunächst nur, dass nicht alle Populationsmittelwerte gleich sind. Welche Gruppen sich unterscheiden, muss separat untersucht werden."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#daten-explorativ-untersuchen",
+    "href": "posts_de/einfaktorielle-anova/index.html#daten-explorativ-untersuchen",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "4 Daten explorativ untersuchen",
+    "text": "4 Daten explorativ untersuchen\nVor jedem Signifikanztest empfiehlt sich ein Blick auf Gruppengrößen, Mittelwerte, Standardabweichungen und die beobachteten Verteilungen.\n\nanzahl &lt;- aggregate(weight ~ group, data = pflanzen, FUN = length)\nmittelwerte &lt;- aggregate(weight ~ group, data = pflanzen, FUN = mean)\nstreuungen &lt;- aggregate(weight ~ group, data = pflanzen, FUN = sd)\n\ndeskriptiv &lt;- data.frame(\n  Gruppe = anzahl$group,\n  n = anzahl$weight,\n  Mittelwert = round(mittelwerte$weight, 3),\n  SD = round(streuungen$weight, 3)\n)\ndeskriptiv\n\n  Gruppe  n Mittelwert    SD\n1   ctrl 10      5.032 0.583\n2   trt1 10      4.661 0.794\n3   trt2 10      5.526 0.443\n\n\n\nset.seed(123)\nboxplot(weight ~ group, data = pflanzen,\n        col = \"gray90\", border = \"gray35\",\n        xlab = \"Versuchsgruppe\", ylab = \"Trockengewicht\",\n        main = \"Pflanzengewicht in drei Gruppen\")\nstripchart(weight ~ group, data = pflanzen,\n           vertical = TRUE, method = \"jitter\", jitter = 0.12,\n           pch = 19, col = \"steelblue\", add = TRUE)\n\n\n\n\n\n\n\nAbbildung 1: Trockengewicht nach Versuchsgruppe. Die Punkte zeigen einzelne Beobachtungen.\n\n\n\n\n\nDie deskriptiven Mittelwerte betragen 5.032 (ctrl), 4.661 (trt1) und 5.526 (trt2). Diese Unterschiede allein entscheiden noch nicht darüber, ob ein statistisch belastbarer Gruppenunterschied vorliegt."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#einfaktorielle-anova-in-r-berechnen",
+    "href": "posts_de/einfaktorielle-anova/index.html#einfaktorielle-anova-in-r-berechnen",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "5 Einfaktorielle ANOVA in R berechnen",
+    "text": "5 Einfaktorielle ANOVA in R berechnen\nDie Funktion aov() aus dem mitgelieferten Paket stats passt das Modell an. Zusätzliche Pakete sind nicht erforderlich.\n\nmodell &lt;- aov(weight ~ group, data = pflanzen)\nanova_tabelle &lt;- summary(modell)[[1]]\nanova_tabelle\n\n            Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ngroup        2  3.7663  1.8832  4.8461 0.01591 *\nResiduals   27 10.4921  0.3886                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nDie Formel weight ~ group bedeutet: Das Trockengewicht wird in Abhängigkeit von der Gruppenzugehörigkeit modelliert. Die Tabelle enthält unter anderem die Freiheitsgrade (Df), Quadratsummen (Sum Sq), mittleren Quadratsummen (Mean Sq), den F-Wert (F value) und den p-Wert (Pr(&gt;F)).\n\nf_wert &lt;- anova_tabelle[1, \"F value\"]\np_wert &lt;- anova_tabelle[1, \"Pr(&gt;F)\"]\ndf1 &lt;- anova_tabelle[1, \"Df\"]\ndf2 &lt;- anova_tabelle[2, \"Df\"]\n\nc(F = f_wert, df_zwischen = df1,\n  df_innerhalb = df2, p = p_wert)\n\n           F  df_zwischen df_innerhalb            p \n  4.84608786   2.00000000  27.00000000   0.01590996 \n\n\nFür die Beispieldaten ergibt sich F(2, 27) = 4.85 mit p = 0.0159. Beim vorab festgelegten Signifikanzniveau von 5 % wird die Nullhypothese gleicher Gruppenmittelwerte verworfen. Der Test sagt weder, dass jede Gruppe von jeder anderen abweicht, noch belegt er die Ursache des Unterschieds."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#voraussetzungen-kritisch-prüfen",
+    "href": "posts_de/einfaktorielle-anova/index.html#voraussetzungen-kritisch-prüfen",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "6 Voraussetzungen kritisch prüfen",
+    "text": "6 Voraussetzungen kritisch prüfen\nDie klassische einfaktorielle ANOVA setzt insbesondere unabhängige Beobachtungen, eine näherungsweise Normalverteilung der Fehler innerhalb der Gruppen und vergleichbare Fehlervarianzen voraus. Die Unabhängigkeit folgt aus dem Studiendesign und lässt sich nicht durch einen Residuenplot nachträglich bestätigen (Eid et al., 2017).\n\nalte_grafikparameter &lt;- par(no.readonly = TRUE)\npar(mfrow = c(1, 2), mar = c(4.5, 4.5, 3, 1.5))\nplot(modell, which = 1, id.n = 0)\nplot(modell, which = 2, id.n = 0)\npar(alte_grafikparameter)\n\n\n\n\n\n\n\nAbbildung 2: Modelldiagnostik: Residuen gegen vorhergesagte Werte und Normal-Q-Q-Diagramm.\n\n\n\n\n\nIm Diagramm Residuals vs Fitted ist insbesondere auf unterschiedliche Streuungsbreiten und auffällige Einzelwerte zu achten. Im Q-Q-Diagramm sprechen starke systematische Abweichungen von der Referenzlinie gegen die Normalitätsannahme. Bei kleinen Gruppen sind solche Grafiken nur begrenzt aussagekräftig. Automatische Tests ersetzen die fachliche Prüfung nicht.\nEine ergänzende, relativ robuste Prüfung der Varianzgleichheit bietet der Fligner-Killeen-Test:\n\nfligner.test(weight ~ group, data = pflanzen)\n\n\n    Fligner-Killeen test of homogeneity of variances\n\ndata:  weight by group\nFligner-Killeen:med chi-squared = 2.3499, df = 2, p-value = 0.3088\n\n\nEin nicht signifikanter Test beweist keine gleichen Varianzen. Bei deutlich unterschiedlichen Varianzen ist die Welch-ANOVA eine wichtige Alternative, die sich ebenfalls mit Base R berechnen lässt:\n\noneway.test(weight ~ group, data = pflanzen,\n            var.equal = FALSE)\n\n\n    One-way analysis of means (not assuming equal variances)\n\ndata:  weight and group\nF = 5.181, num df = 2.000, denom df = 17.128, p-value = 0.01739\n\n\nDie Welch-ANOVA wird hier als Ausblick gezeigt. Sie ersetzt nicht automatisch die sorgfältige Wahl geeigneter anschließender Gruppenvergleiche."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#welche-gruppen-unterscheiden-sich-tukey-test",
+    "href": "posts_de/einfaktorielle-anova/index.html#welche-gruppen-unterscheiden-sich-tukey-test",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "7 Welche Gruppen unterscheiden sich? Tukey-Test",
+    "text": "7 Welche Gruppen unterscheiden sich? Tukey-Test\nNach dem gemeinsamen F-Test untersuchen Post-hoc-Vergleiche, zwischen welchen Gruppen Unterschiede liegen. TukeyHSD() kontrolliert die familienweise Fehlerwahrscheinlichkeit für die paarweisen Vergleiche im klassischen ANOVA-Modell (R Core Team, o. J.-b).\n\ntukey &lt;- TukeyHSD(modell, which = \"group\")\ntukey\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = weight ~ group, data = pflanzen)\n\n$group\n            diff        lwr       upr     p adj\ntrt1-ctrl -0.371 -1.0622161 0.3202161 0.3908711\ntrt2-ctrl  0.494 -0.1972161 1.1852161 0.1979960\ntrt2-trt1  0.865  0.1737839 1.5562161 0.0120064\n\n\nDie Spalte diff enthält die Mittelwertdifferenz, lwr und upr die Grenzen des simultanen Konfidenzintervalls sowie p adj den für Mehrfachvergleiche angepassten p-Wert. Im vorliegenden Beispiel ist der Unterschied zwischen trt1 und trt2 signifikant (p = 0.012). Die beiden Vergleiche mit der Kontrollgruppe erreichen dagegen das Niveau von 5 % nicht. Das bedeutet nicht, dass diese Gruppen in der Population identisch sind."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#wie-groß-ist-der-gruppeneffekt",
+    "href": "posts_de/einfaktorielle-anova/index.html#wie-groß-ist-der-gruppeneffekt",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "8 Wie groß ist der Gruppeneffekt?",
+    "text": "8 Wie groß ist der Gruppeneffekt?\nEin p-Wert allein beschreibt nicht die Größe eines beobachteten Effekts. Bei der einfaktoriellen ANOVA kann Eta-Quadrat (\\(\\eta^2\\)) als Anteil der durch die Gruppenzugehörigkeit erklärten Variation an der Gesamtvariation berechnet werden:\n\\[\n\\eta^2 = \\frac{SS_{\\mathrm{zwischen}}}{SS_{\\mathrm{gesamt}}}.\n\\]\n\nss_zwischen &lt;- anova_tabelle[1, \"Sum Sq\"]\nss_fehler &lt;- anova_tabelle[2, \"Sum Sq\"]\neta2 &lt;- ss_zwischen / (ss_zwischen + ss_fehler)\nround(eta2, 3)\n\n[1] 0.264\n\n\nHier beträgt \\(\\eta^2\\) = 0.264. Im vorliegenden Datensatz hängen damit rund 26.4 % der beobachteten Gesamtvariation des Trockengewichts mit den Gruppenunterschieden zusammen. Dies ist eine deskriptive Stichproben-Effektgröße, kein Beleg für Kausalität. Eine Einordnung als „klein“, „mittel“ oder „groß“ verlangt den jeweiligen fachlichen Kontext.\n\n\n\n\n\n\nZusammenhang zwischen Eta-Quadrat und R²\n\n\n\nBei der klassischen einfaktoriellen Varianzanalyse entspricht Eta-Quadrat (\\(\\eta^2\\)) mathematisch dem Bestimmtheitsmaß (\\(R^2\\)) des äquivalenten linearen Regressionsmodells.\nBeide Kennzahlen beschreiben den Anteil der beobachteten Gesamtvariation der abhängigen Variablen, der durch das Modell erklärt wird.\nIm vorliegenden Beispiel mit dem Datensatz PlantGrowth beträgt dieser Anteil rund 26,4 %.\nWährend \\(R^2\\) häufig zur Beschreibung der Modellgüte verwendet wird, dient \\(\\eta^2\\) in der Varianzanalyse zur Quantifizierung des Gruppeneffekts.\nWichtig: Diese Gleichheit gilt für die klassische einfaktorielle ANOVA und das entsprechende lineare Modell mit Achsenabschnitt. Bei mehrfaktoriellen Modellen und insbesondere beim partiellen Eta-Quadrat (\\(\\eta_p^2\\)) ist diese Unterscheidung zu beachten."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#beispiel-für-einen-wissenschaftlichen-ergebnisbericht",
+    "href": "posts_de/einfaktorielle-anova/index.html#beispiel-für-einen-wissenschaftlichen-ergebnisbericht",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "9 Beispiel für einen wissenschaftlichen Ergebnisbericht",
+    "text": "9 Beispiel für einen wissenschaftlichen Ergebnisbericht\nEine einfaktorielle Varianzanalyse untersuchte Unterschiede im Trockengewicht zwischen einer Kontrollgruppe und zwei Behandlungsgruppen (N = 30). Der Gruppeneffekt war statistisch signifikant, F(2, 27) = 4.85, p = 0.016, \\(\\eta^2\\) = 0.264. Tukey-adjustierte Paarvergleiche ergaben einen signifikanten Unterschied zwischen den beiden Behandlungsgruppen (p = 0.012), nicht jedoch zwischen den jeweiligen Behandlungsgruppen und der Kontrollgruppe. Die Interpretation setzt voraus, dass das Studiendesign und die Modellannahmen hinreichend geeignet sind."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#probiere-es-selbst-aus",
+    "href": "posts_de/einfaktorielle-anova/index.html#probiere-es-selbst-aus",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "10 Probiere es selbst aus",
+    "text": "10 Probiere es selbst aus\n\nWelche Gruppe weist den höchsten Mittelwert auf, und reicht diese Information für eine Schlussfolgerung aus?\nÄndert sich das ANOVA-Ergebnis, wenn die Gruppenbezeichnungen anders angeordnet werden?\nWelche Informationen enthält ein Tukey-Konfidenzintervall zusätzlich zum angepassten p-Wert?\nWarum lässt sich die Unabhängigkeit der Beobachtungen nicht aus einem Q-Q-Diagramm ableiten?\nVergleiche das Ergebnis von oneway.test() mit dem klassischen F-Test. Welche Modellannahme unterscheidet die beiden Verfahren?"
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#fazit",
+    "href": "posts_de/einfaktorielle-anova/index.html#fazit",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "11 Fazit",
+    "text": "11 Fazit\nDie einfaktorielle ANOVA verbindet eine klare Forschungsfrage mit einem Modell zum Vergleich mehrerer Gruppenmittelwerte. Für eine nachvollziehbare Auswertung reichen aov() und ein p-Wert jedoch nicht aus. Erst durch deskriptive Analyse, Prüfung des Designs und der Voraussetzungen, passende Post-hoc-Vergleiche und eine Effektgröße entsteht ein interpretierbarer Ergebnisbericht. Der Datensatz PlantGrowth ermöglicht, diese Arbeitsschritte ohne zusätzliche R-Pakete nachzuvollziehen."
+  },
+  {
+    "objectID": "posts_de/einfaktorielle-anova/index.html#literatur",
+    "href": "posts_de/einfaktorielle-anova/index.html#literatur",
+    "title": "Einfaktorielle ANOVA mit R: Eine Schritt-für-Schritt-Anleitung",
+    "section": "12 Literatur",
+    "text": "12 Literatur\nAgresti, A., & Finlay, B. (2014). Statistical methods for the social sciences (4. Aufl., Pearson New International Edition). Pearson.\nDöring, N. (2023). Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften (6. Aufl.). Springer. https://doi.org/10.1007/978-3-662-64762-2\nEid, M., Gollwitzer, M., & Schmitt, M. (2017). Statistik und Forschungsmethoden (5., korrigierte Aufl.). Beltz.\nR Core Team. (o. J.-a). PlantGrowth: Results from an experiment on plant growth [R-Dokumentation]. https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/PlantGrowth.html\nR Core Team. (o. J.-b). TukeyHSD: Compute Tukey honest significant differences [R-Dokumentation]. https://search.r-project.org/R/refmans/stats/html/TukeyHSD.html\nR Core Team. (o. J.-c). aov: Fit an analysis of variance model [R-Dokumentation]. https://stat.ethz.ch/R-manual/R-devel/library/stats/html/aov.html\nR Core Team. (o. J.-d). oneway.test: Test for equal means in a one-way layout [R-Dokumentation]. https://stat.ethz.ch/R-manual/R-devel/library/stats/html/oneway.test.html"
   }
 ]

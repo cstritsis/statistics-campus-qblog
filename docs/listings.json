@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/de/index.html",
+    "items": [
+      "/posts_de/einfaktorielle-anova/index.html"
+    ]
+  },
+  {
     "listing": "/en/index.html",
     "items": [
       "/posts_en/multiple-linear-regression/index.html"
